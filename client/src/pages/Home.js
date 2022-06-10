@@ -7,7 +7,6 @@ import { QUERY_THOUGHTS } from '../utils/queries';
 const Home = () => {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
   const thoughts = data?.thoughts || [];
-  console.log(thoughts);
 
   return (
     <main>
